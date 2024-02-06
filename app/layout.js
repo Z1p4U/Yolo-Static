@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutUs from "@/components/AboutUs";
+import Services from "@/components/Services";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +24,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        // style={{ backgroundColor: "#530ffe07" }}
-        className={inter.className}
+      // style={{ backgroundColor: "#530ffe07" }}
       >
         <Header />
         <HeroSection />
         <AboutUs />
+        <Services />
         {children}
       </body>
     </html>

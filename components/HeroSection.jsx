@@ -9,8 +9,13 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 // import "../public/logo";
-
 import { Autoplay, FreeMode } from "swiper/modules";
+import { Oswald } from "next/font/google";
+
+const oswald = Oswald({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const icons = [
   {
@@ -46,10 +51,12 @@ const HeroSection = () => {
         <div className=" grid grid-cols-2 justify-center items-center align-middle ">
           <div className=" col-start-1 col-span-2 md:col-span-1 flex flex-col justify-center items-center md:justify-end md:items-baseline">
             <div className=" mb-5 mx-5">
-              <h1 className=" font-semibold md:font-bold text-3xl md:text-4xl lg:text-5xl text-[#530FFE] mb-5">
+              <h1
+                className={`font-semibold md:font-bold text-3xl md:text-4xl lg:text-5xl text-[#530FFE] mb-5 ${oswald.className}`}
+              >
                 Your Trusted Marketing Agency
               </h1>
-              <p className=" text-[#530ffeb0] font-serif">
+              <p className={` text-[#34383ac0] ${oswald.className}`}>
                 At YOLO Digital Marketing Company, you can get Digital
                 Marketing, Offline Marketing, Application Development and Video
                 Production as a One Stop Solution. We are helping services as a
