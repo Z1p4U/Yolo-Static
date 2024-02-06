@@ -9,7 +9,7 @@ const oswald = Oswald({
 const Services = () => {
   return (
     <>
-      <div className={` mt-10 pt-10 bg-[#ffffff]`}>
+      <div id="services" className={` mt-10 pt-10 bg-[#ffffff]`}>
         <div className="">
           <div
             className={`container mx-auto flex justify-center items-center align-middle flex-col ${oswald.className}`}

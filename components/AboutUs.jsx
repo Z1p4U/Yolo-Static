@@ -20,7 +20,7 @@ const roboto400 = Roboto({
 const AboutUs = () => {
   return (
     <>
-      <div className={` mt-10 py-10 bg-[#F8F8F8]`}>
+      <div id="about" className={` mt-10 py-10 bg-[#F8F8F8]`}>
         <div className="container mx-auto">
           <div
             className={`flex justify-center items-center align-middle flex-col ${oswald.className}`}

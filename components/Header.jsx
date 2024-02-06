@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [active, setActive] = useState("");
@@ -12,7 +13,14 @@ const Header = () => {
   return (
     <div className="z-[200] mb-10">
       <div class="container mx-auto px-10 py-2 flex justify-between items-center align-middle">
-        <Link href={"/"}>
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          className="hover:no-underline cursor-pointer"
+        >
           <div className=" flex flex-nowrap justify-center items-baseline align-middle">
             {" "}
             <Image
@@ -30,27 +38,50 @@ const Header = () => {
         </Link>
 
         <div className="hidden md:flex justify-center items-center align-middle md:gap-4 lg:gap-5 md:text-base lg:text-lg">
-          <Link href={"/"}>
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="hover:no-underline cursor-pointer"
+          >
             <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
               Home
             </p>
           </Link>
-          <Link href={"/"}>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="hover:no-underline cursor-pointer"
+          >
             <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
               About
             </p>
           </Link>
-          <Link href={"/"}>
-            <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
-              Work
-            </p>
-          </Link>
-          <Link href={"/"}>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="hover:no-underline cursor-pointer"
+          >
             <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
               Services
             </p>
           </Link>
-          <Link href={"/"}>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className=" cursor-pointer hover:no-underline"
+          >
             <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
               Contact
             </p>
@@ -71,34 +102,52 @@ const Header = () => {
           } flex flex-col cursor-pointer h-fit w-full items-center align-middle fixed top-[68px] left-0 transition-all duration-500 bg-[#DBCCFF] `}
         >
           <Link
-            href={"/"}
-            className="w-full py-2 block text-center text-[#530FFE] hover:bg-[#530FFE20] transition-all duration-300"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="hover:no-underline cursor-pointer"
           >
-            Home
+            <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
+              Home
+            </p>
           </Link>
           <Link
-            href={"/"}
-            className="w-full py-2 block text-center text-[#530FFE] hover:bg-[#530FFE20] transition-all duration-300"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="hover:no-underline cursor-pointer"
           >
-            About
+            <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
+              About
+            </p>
           </Link>
           <Link
-            href={"/"}
-            className="w-full py-2 block text-center text-[#530FFE] hover:bg-[#530FFE20] transition-all duration-300"
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="hover:no-underline cursor-pointer"
           >
-            Work
+            <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
+              Services
+            </p>
           </Link>
           <Link
-            href={"/"}
-            className="w-full py-2 block text-center text-[#530FFE] hover:bg-[#530FFE20] transition-all duration-300"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className=" cursor-pointer hover:no-underline"
           >
-            Service
-          </Link>
-          <Link
-            href={"/"}
-            className="w-full py-2 block text-center text-[#530FFE] hover:bg-[#530FFE20] transition-all duration-300"
-          >
-            Contact
+            <p className=" text-[#530FFE] hover:text-[#530FFEa0] transition-all duration-300">
+              Contact
+            </p>
           </Link>
         </div>
       </div>

@@ -47,7 +47,7 @@ const icons = [
 const HeroSection = () => {
   return (
     <>
-      <div className=" container mx-auto ">
+      <div id="home" className=" container mx-auto ">
         <div className=" grid grid-cols-2 justify-center items-center align-middle ">
           <div className=" col-start-1 col-span-2 md:col-span-1 flex flex-col justify-center items-center md:justify-end md:items-baseline">
             <div className=" mb-5 mx-5">
