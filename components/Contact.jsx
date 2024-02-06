@@ -17,7 +17,7 @@ const oswald200 = Oswald({
 const Contact = () => {
   return (
     <>
-      <div className={` py-10`}>
+      <div className={` pt-10`}>
         <div className="container mx-auto">
           <div
             className={`flex justify-center items-center align-middle flex-col ${oswald.className}`}
