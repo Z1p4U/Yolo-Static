@@ -27,7 +27,7 @@ const AboutUs = () => {
           >
             <hr className=" w-[500px]" />
             <p className=" font-bold text-[#530FFE] bg-[#F8F8F8] px-3 py-2 -mt-[23px] text-2xl">
-              Our Project & Vision
+              Recognized By Everyone
             </p>
             <div className="">
               <p className="font-bold text-5xl text-[#34383A]">

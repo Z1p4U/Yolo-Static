@@ -4,6 +4,9 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutUs from "@/components/AboutUs";
 import Services from "@/components/Services";
+import Dialogue from "@/components/Dialogue";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +33,10 @@ export default function RootLayout({ children }) {
         <HeroSection />
         <AboutUs />
         <Services />
-        {children}
+        <Dialogue />
+        <Contact />
+        <Footer />
+        {/* {children} */}
       </body>
     </html>
   );
