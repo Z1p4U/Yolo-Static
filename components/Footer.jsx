@@ -31,11 +31,11 @@ const Footer = () => {
 
             <div className=" flex gap-5 text-4xl justify-center items-center align-middle">
               <a href="https://www.facebook.com/yolodigitalmarketingagency/">
-                <FaFacebook className=" transition-all duration-500 hover:text-blue-500" />
+                <FaFacebook className=" transition-all duration-500 hover:text-blue-800" />
               </a>
 
               <a href="https://www.instagram.com/yolomyanmar/">
-                <FaLinkedin className=" transition-all duration-500 hover:text-black" />
+                <FaLinkedin className=" transition-all duration-500 hover:text-blue-600" />
               </a>
               <a href="https://www.linkedin.com/company/yolo-digital-marketing/">
                 <FaInstagramSquare className=" transition-all duration-500 hover:text-red-500" />

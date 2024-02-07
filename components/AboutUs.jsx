@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Oswald } from "next/font/google";
 import { Roboto } from "next/font/google";
+import heroSectionImage from "/public/missie.jpg";
 
 const oswald = Oswald({
   weight: "400",
@@ -39,11 +40,11 @@ const AboutUs = () => {
           <div className=" mt-10 grid grid-cols-2 gap-10">
             <div className=" col-start-1 col-span-2 md:col-span-1 ">
               <Image
-                width={200}
+                width={800}
                 height={400}
-                src={"/missie.jpg"}
+                src={heroSectionImage}
                 alt="Hero Section Image"
-                className="img w-full h-full rounded-sm"
+                className="img rounded-sm"
               />
             </div>
             <div
@@ -54,7 +55,7 @@ const AboutUs = () => {
               </p>
               <hr />
               <div
-                className={`flex flex-col justify-start items-center align-middle text-lg leading-6 gap-3 text-[#44494cc0] ${roboto300.className}`}
+                className={`flex flex-col justify-start items-center align-middle text-lg leading-7 gap-3 text-[#8d8d8df5] ${roboto300.className}`}
               >
                 <p>
                   {" "}

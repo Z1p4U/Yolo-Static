@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className="z-[200] mb-10">
-      <div class="container mx-auto px-10 py-2 flex justify-between items-center align-middle">
+      <div class="container mx-auto px-10 py-8 flex justify-between items-center align-middle">
         <Link
           to="home"
           spy={true}
@@ -23,7 +23,7 @@ const Header = () => {
           <div className=" flex flex-nowrap justify-center items-baseline align-middle">
             {" "}
             <Image
-              width={60}
+              width={80}
               height={60}
               src={"/yolologo.svg"}
               alt="Yolo Logo"
@@ -36,7 +36,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <div className="hidden md:flex justify-center items-center align-middle md:gap-4 lg:gap-5 md:text-base lg:text-lg">
+        <div className="hidden md:flex md:gap-8 lg:gap-12 md:text-base lg:text-xl font-semibold">
           <Link
             to="home"
             spy={true}

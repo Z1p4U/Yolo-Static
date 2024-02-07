@@ -67,17 +67,17 @@ const HeroSection = () => {
               <Link
                 href={"https://www.facebook.com/yolodigitalmarketingagency/"}
               >
-                <FaFacebook className=" border border-[#530ffe] px-1 py-1 rounded-md hover:bg-[#530ffe40] hover:text-blue-500 transition-all duration-300" />
+                <FaFacebook className="px-1 py-1 rounded-md hover:text-blue-800 transition-all duration-300" />
               </Link>
               <Link href={"https://www.instagram.com/yolomyanmar/"}>
-                <FaInstagram className=" border border-[#530ffe] px-1 py-1 rounded-md hover:bg-[#530ffe40] hover:text-red-500 transition-all duration-300" />
+                <FaInstagram className="px-1 py-1 rounded-md hover:text-red-500 transition-all duration-300" />
               </Link>
               <Link
                 href={
                   "https://www.linkedin.com/company/yolo-digital-marketing/"
                 }
               >
-                <FaLinkedinIn className=" border border-[#530ffe] px-1 py-1 rounded-md hover:bg-[#530ffe40] transition-all duration-300" />
+                <FaLinkedinIn className="px-1 py-1 rounded-md hover:text-blue-600 transition-all duration-300" />
               </Link>
             </div>
           </div>
@@ -91,7 +91,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <div className=" flex justify-center items-center align-middle">
+        <div className="flex justify-center items-center align-middle">
           <Swiper
             className={"flex justify-center items-center align-middle"}
             breakpoints={{

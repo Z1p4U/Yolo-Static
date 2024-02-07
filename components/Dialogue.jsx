@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Oswald } from "next/font/google";
 import { Roboto } from "next/font/google";
+import profilePhoto from "/public/missie.jpg";
 
 const oswald = Oswald({
   weight: "400",
@@ -37,6 +38,13 @@ const Dialogue = () => {
               into the forefront of innovation"
             </p>
             <p className={`${oswald.className}`}>
+              <Image
+                width={35}
+                height={35}
+                src={profilePhoto}
+                alt="Profile"
+                className="img rounded-full object-cover inline-block mr-2"
+              />
               <span className=" font-semibold text-lg ">Ye Kyaw Lin</span> |{" "}
               <span className=" text-[#6A7280]">CEO at YOLO</span>
             </p>
