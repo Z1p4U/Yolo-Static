@@ -41,7 +41,7 @@ const AboutUs = () => {
               <Image
                 width={200}
                 height={400}
-                src={"/imgs/missie.jpg"}
+                src={"/missie.jpg"}
                 alt="Hero Section Image"
                 className="img w-full h-full rounded-sm"
               />

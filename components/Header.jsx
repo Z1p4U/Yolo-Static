@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
