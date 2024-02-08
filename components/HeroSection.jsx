@@ -47,8 +47,8 @@ const icons = [
 const HeroSection = () => {
   return (
     <>
-      <div id="home" className=" container mx-auto ">
-        <div className=" grid grid-cols-2 justify-center items-center align-middle ">
+      <div id="home" className="container mx-auto ">
+        <div className="grid grid-cols-2 justify-center items-center align-middle ">
           <div className=" col-start-1 col-span-2 md:col-span-1 flex flex-col justify-center items-center md:justify-end md:items-baseline">
             <div className=" mb-5 mx-5">
               <h1
@@ -56,7 +56,7 @@ const HeroSection = () => {
               >
                 Your Trusted Marketing Agency
               </h1>
-              <p className={` text-[#34383ac0] ${oswald.className}`}>
+              <p className={`text-[#34383ac0] ${oswald.className}`}>
                 At YOLO Digital Marketing Company, you can get Digital
                 Marketing, Offline Marketing, Application Development and Video
                 Production as a One Stop Solution. We are helping services as a
@@ -67,21 +67,21 @@ const HeroSection = () => {
               <Link
                 href={"https://www.facebook.com/yolodigitalmarketingagency/"}
               >
-                <FaFacebook className=" border border-[#530ffe] px-1 py-1 rounded-md hover:bg-[#530ffe40] hover:text-blue-500 transition-all duration-300" />
+                <FaFacebook className="px-1 py-1 rounded-md hover:text-blue-800 transition-all duration-300" />
               </Link>
               <Link href={"https://www.instagram.com/yolomyanmar/"}>
-                <FaInstagram className=" border border-[#530ffe] px-1 py-1 rounded-md hover:bg-[#530ffe40] hover:text-red-500 transition-all duration-300" />
+                <FaInstagram className="px-1 py-1 rounded-md hover:text-red-500 transition-all duration-300" />
               </Link>
               <Link
                 href={
                   "https://www.linkedin.com/company/yolo-digital-marketing/"
                 }
               >
-                <FaLinkedinIn className=" border border-[#530ffe] px-1 py-1 rounded-md hover:bg-[#530ffe40] transition-all duration-300" />
+                <FaLinkedinIn className="px-1 py-1 rounded-md hover:text-blue-600 transition-all duration-300" />
               </Link>
             </div>
           </div>
-          <div className=" hidden md:col-start-2 md:col-span-1 md:flex justify-center">
+          <div className="flex md:col-start-2 md:col-span-1 justify-center">
             <Image
               width={500}
               height={400}
@@ -91,7 +91,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <div className=" flex justify-center items-center align-middle">
+        <div className="flex justify-center items-center align-middle">
           <Swiper
             className={"flex justify-center items-center align-middle"}
             breakpoints={{
