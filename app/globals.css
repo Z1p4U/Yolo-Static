@@ -33,3 +33,10 @@ body {
     text-wrap: balance;
   }
 } */
+
+.red {
+  border: 1px dashed red;
+}
+.blue {
+  border: 1px dashed blue;
+}

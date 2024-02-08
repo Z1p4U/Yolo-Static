@@ -27,11 +27,11 @@ const AboutUs = () => {
             className={`flex justify-center items-center align-middle flex-col ${oswald.className}`}
           >
             <hr className=" w-[500px]" />
-            <p className=" font-bold text-[#530FFE] bg-[#F8F8F8] px-3 py-2 -mt-[23px] text-2xl">
+            <p className=" font-bold text-[#530FFE] bg-[#F8F8F8] px-3 py-2 -mt-[23px] text-xl md:text-2xl">
               Recognized By Everyone
             </p>
             <div className="">
-              <p className="font-bold text-5xl text-[#34383A]">
+              <p className="font-bold text-3xl md:text-5xl text-[#34383A]">
                 About Our Company
               </p>
             </div>
@@ -48,7 +48,7 @@ const AboutUs = () => {
               />
             </div>
             <div
-              className={`col-start-1 md:col-start-2 md:col-span-1 flex flex-col gap-4`}
+              className={`col-start-1 md:col-start-2 col-span-2 md:col-span-1 flex flex-col gap-4`}
             >
               <p className={`font-bold text-xl ${roboto400.className}`}>
                 BRINGING IDEAS TO LIFE
