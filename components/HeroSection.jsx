@@ -81,7 +81,7 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
-          <div className="flex md:col-start-2 md:col-span-1 justify-center">
+          <div className="flex px-[15%] md:px-0 py-[20px] md:py-0 md:col-start-2 col-span-2 md:col-span-1 justify-center">
             <Image
               width={500}
               height={400}
