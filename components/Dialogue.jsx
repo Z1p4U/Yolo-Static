@@ -31,7 +31,7 @@ const Dialogue = () => {
               alt="Comma"
               className="img select-none text-center "
             />
-            <p className=" text-xl font-bold text-center whitespace-break-spaces p-10 font-sans w-[900px]">
+            <p className="md:text-xl text-lg font-bold text-center whitespace-break-spaces p-10 font-sans md:w-[900px] w-[550px]">
               "As we delve into the digital age, the power of marketing
               transforms. Through digital channels, we craft narratives that
               resonate, forging connections that endure, propelling businesses

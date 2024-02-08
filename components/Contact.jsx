@@ -23,24 +23,26 @@ const Contact = () => {
             className={`flex justify-center items-center align-middle flex-col ${oswald.className}`}
           >
             <hr className=" w-[500px]" />
-            <p className=" font-bold text-[#530FFE] bg-white px-3 py-2 -mt-[23px] text-2xl">
+            <p className=" font-bold text-[#530FFE] bg-blue-50 px-3 py-2 -mt-[23px] md:text-2xl text-xl">
               We're All Ears
             </p>
             <div className="">
-              <p className="font-bold text-5xl text-[#34383A]">GET IN TOUCH</p>
+              <p className="font-bold md:text-5xl text-3xl text-[#34383A]">
+                GET IN TOUCH
+              </p>
             </div>
           </div>
 
-          <div className=" mt-5 flex justify-center items-center align-middle flex-col">
-            <p className=" w-[700px] text-center leading-5 text-[#6A7280] ">
+          <div className="mt-5 flex justify-center items-center align-middle flex-col">
+            <p className="md:w-[700px] w-[400px] text-center leading-5 text-[#6A7280] ">
               Feel free to reach out! Our team is here to help. You can contact
               us via phone, email, or through our website's live chat feature.
               We look forward to hearing from you!
             </p>
           </div>
 
-          <div className=" grid grid-cols-4 mt-10 gap-10">
-            <div className=" col-start-1 col-span-1 flex justify-center items-center align-middle flex-col gap-2">
+          <div className="grid md:grid-cols-4 mt-10 gap-10">
+            <div className="md:col-start-1 col-span-1 flex justify-center items-center align-middle flex-col gap-2">
               <MdOutlinePersonPinCircle className=" text-[#530FFE] text-4xl" />
               <div
                 className={`${oswald.className} flex justify-center items-center align-middle flex-col gap-2`}
@@ -54,7 +56,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className=" col-start-2 col-span-1 flex justify-center items-center align-middle flex-col gap-2">
+            <div className="md:col-start-2 col-span-1 flex justify-center items-center align-middle flex-col gap-2">
               <IoIosPhonePortrait className=" text-[#530FFE] text-4xl" />
               <div
                 className={`${oswald.className} flex justify-center items-center align-middle flex-col gap-2`}
@@ -68,7 +70,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className=" col-start-3 col-span-1 flex justify-center items-center align-middle flex-col gap-2">
+            <div className="md:col-start-3 col-span-1 flex justify-center items-center align-middle flex-col gap-2">
               <RiMessage2Line className=" text-[#530FFE] text-4xl" />
               <div
                 className={`${oswald.className} flex justify-center items-center align-middle flex-col gap-2`}
@@ -88,7 +90,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="col-start-4 col-span-1 flex justify-center items-center align-middle flex-col gap-2">
+            <div className="md:col-start-4 col-span-1 flex justify-center items-center align-middle flex-col gap-2">
               <MdAutoAwesome className=" text-[#530FFE] text-4xl" />
               <div
                 className={`flex justify-center items-center align-middle flex-col gap-2`}
