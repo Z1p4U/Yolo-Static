@@ -26,9 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-      // style={{ backgroundColor: "#530ffe07" }}
-      >
+      <body className="bg-blue-50">
         <Header />
         <HeroSection />
         <AboutUs />

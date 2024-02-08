@@ -47,8 +47,8 @@ const icons = [
 const HeroSection = () => {
   return (
     <>
-      <div id="home" className=" container mx-auto ">
-        <div className=" grid grid-cols-2 justify-center items-center align-middle ">
+      <div id="home" className="container mx-auto ">
+        <div className="grid grid-cols-2 justify-center items-center align-middle ">
           <div className=" col-start-1 col-span-2 md:col-span-1 flex flex-col justify-center items-center md:justify-end md:items-baseline">
             <div className=" mb-5 mx-5">
               <h1
@@ -56,7 +56,7 @@ const HeroSection = () => {
               >
                 Your Trusted Marketing Agency
               </h1>
-              <p className={` text-[#34383ac0] ${oswald.className}`}>
+              <p className={`text-[#34383ac0] ${oswald.className}`}>
                 At YOLO Digital Marketing Company, you can get Digital
                 Marketing, Offline Marketing, Application Development and Video
                 Production as a One Stop Solution. We are helping services as a
@@ -81,7 +81,7 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
-          <div className=" hidden md:col-start-2 md:col-span-1 md:flex justify-center">
+          <div className="flex md:col-start-2 md:col-span-1 justify-center">
             <Image
               width={500}
               height={400}
