@@ -1,15 +1,10 @@
 "use client";
-import Image from "next/image";
+
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Marquee from "react-fast-marquee";
 
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-// import "../public/logo";
-import { Autoplay, FreeMode } from "swiper/modules";
 import { Oswald } from "next/font/google";
 
 const oswald = Oswald({
@@ -47,12 +42,12 @@ const icons = [
 const HeroSection = () => {
   return (
     <>
-      <div id="home" className="container mx-auto ">
+      <div id="home" className="container mx-auto md:mt-10 mt-20 px-2 md:px-5">
         <div className="grid grid-cols-2 justify-center items-center align-middle ">
           <div className=" col-start-1 col-span-2 md:col-span-1 flex flex-col justify-center items-center md:justify-end md:items-baseline">
             <div className=" mb-5 mx-5">
               <h1
-                className={`font-semibold md:font-bold text-3xl md:text-4xl lg:text-5xl text-[#530FFE] mb-5 ${oswald.className}`}
+                className={`font-semibold md:font-bold text-4xl lg:text-5xl text-[#530FFE] mb-5 ${oswald.className}`}
               >
                 Your Trusted Marketing Agency
               </h1>
@@ -81,56 +76,26 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
-          <div className="flex md:col-start-2 md:col-span-1 justify-center">
-            <Image
-              width={500}
-              height={400}
+          <div className=" hidden md:flex md:col-start-2 md:col-span-1 justify-center items-center align-middle">
+            <img
               src={"/hero_section.svg"}
               alt="Hero Section Image"
-              className="img"
+              className=" w-[500px] h-[400px] "
             />
           </div>
         </div>
-        <div className="flex justify-center items-center align-middle">
-          <Swiper
-            className={"flex justify-center items-center align-middle"}
-            breakpoints={{
-              "@0.00": {
-                slidesPerView: 3,
-                spaceBetween: 5,
-              },
-              "@1.00": {
-                slidesPerView: 4,
-                spaceBetween: 10,
-              },
-              "@1.50": {
-                slidesPerView: 5,
-                spaceBetween: 5,
-              },
-            }}
-            freeMode={true}
-            modules={[Autoplay]}
-            loop={true}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: true,
-            }}
-            // className="mySwiper"
-          >
-            {icons?.map((icon) => {
-              return (
-                <SwiperSlide className="">
-                  <Image
-                    width={75}
-                    height={50}
-                    src={icon.src}
-                    className="img"
-                  />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
+        <Marquee className="w-full" direction="right">
+          {icons?.map((icon) => {
+            return (
+              <div className=" flex justify-center items-center align-middle">
+                <img
+                  src={icon.src}
+                  className=" h-20 mx-16 cursor-pointer rounded-md"
+                />
+              </div>
+            );
+          })}
+        </Marquee>
       </div>
     </>
   );

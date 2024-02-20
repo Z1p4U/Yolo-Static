@@ -37,7 +37,7 @@ const Navbar = ({ visibleDefault }) => {
 
       setIsAtTop(currentScrollPos <= 0);
 
-      setVisible(currentScrollPos > prevScrollPos && currentScrollPos > 600);
+      setVisible(currentScrollPos < prevScrollPos && currentScrollPos > 600);
 
       setPrevScrollPos(currentScrollPos);
     };
@@ -53,7 +53,7 @@ const Navbar = ({ visibleDefault }) => {
     <header>
       <nav
         className={`${
-          isAtTop ? "absolute" : "fixed"
+          isAtTop ? "absolute" : "sticky"
         } mx-auto border-b border-[#33353F] text-black left-0 right-0 z-10 bg-[#fffafaec] bg-opacity-100 transition-all duration-300 ${
           visible ? "bg-opacity-100" : "bg-opacity-0 -translate-y-full"
         }`}

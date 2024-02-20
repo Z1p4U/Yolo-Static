@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { Oswald } from "next/font/google";
 import { Roboto } from "next/font/google";
-import profilePhoto from "/public/missie.jpg";
 
 const oswald = Oswald({
   weight: "400",
@@ -21,32 +20,33 @@ const roboto400 = Roboto({
 const Dialogue = () => {
   return (
     <>
-      <div className={`py-14 bg-[#F8F8F8]`}>
-        <div className="container mx-auto">
+      <div className={`py-10 bg-[#F8F8F8]`}>
+        <div className="container mx-auto px-2 md:px-5">
           <div className=" flex justify-center items-center align-middle flex-col ">
-            <Image
-              width={50}
-              height={50}
+            <img
               src={"/comma.svg"}
               alt="Comma"
-              className="img select-none text-center "
+              className=" w-[25px] h-[25px] md:w-[50px] md:h-[50px] select-none text-center "
             />
-            <p className="md:text-xl text-lg font-bold text-center whitespace-break-spaces p-10 font-sans md:w-[900px] w-[550px]">
+            <p className="md:text-xl sm:text-lg text-xs font-semibold md:font-bold text-center whitespace-break-spaces p-2 sm:p-3 md:p-10 font-sans md:w-[700px] lg:w-[900px] sm:w-[550px] w-full">
               "As we delve into the digital age, the power of marketing
               transforms. Through digital channels, we craft narratives that
               resonate, forging connections that endure, propelling businesses
               into the forefront of innovation"
             </p>
             <p className={`${oswald.className}`}>
-              <Image
-                width={35}
-                height={35}
-                src={profilePhoto}
+              <img
+                src={"/missie.jpg"}
                 alt="Profile"
-                className="img rounded-full object-cover inline-block mr-2"
+                className=" w-[25px] h-[25px] md:w-[35px] md:h-[35px]  rounded-full object-cover inline-block mr-2"
               />
-              <span className=" font-semibold text-lg ">Ye Kyaw Lin</span> |{" "}
-              <span className=" text-[#6A7280]">CEO at YOLO</span>
+              <span className=" font-semibold text-sm sm:text-base md:text-lg ">
+                Ye Kyaw Lin
+              </span>{" "}
+              |{" "}
+              <span className=" text-[#6A7280] text-sm sm:text-base md:text-lg">
+                CEO at YOLO
+              </span>
             </p>
           </div>
         </div>

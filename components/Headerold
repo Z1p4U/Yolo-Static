@@ -1,0 +1,39 @@
+"use client";
+import { Link } from "react-scroll";
+import Navbar from "./nav/Navbar";
+import { useState } from "react";
+import { FaBars, FaXing } from "react-icons/fa";
+import NavLink from "./nav/NavLink";
+import MenuOverlay from "./nav/MenuOverlay";
+import Image from "next/image";
+
+const HeaderOld = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+  const navLinks = [
+    {
+      title: "Home",
+      path: "home",
+    },
+    {
+      title: "About",
+      path: "about",
+    },
+    {
+      title: "Services",
+      path: "services",
+    },
+    {
+      title: "Contact",
+      path: "contact",
+    },
+  ];
+
+  return (
+    <>
+      <div className=" container "></div>
+      <Navbar visibleDefault />
+    </>
+  );
+};
+
+export default HeaderOld;
