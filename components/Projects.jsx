@@ -12,15 +12,15 @@ const Projects = () => {
       <div id="projects" className={` pt-10 bg-[#ffffff]`}>
         <div className="">
           <div
-            className={`container mx-auto flex justify-center items-center align-middle flex-col ${oswald.className}`}
+            className={` container mx-auto px-2 md:px-5 flex justify-center items-center align-middle flex-col ${oswald.className}`}
           >
-            <hr className="md:w-[500px] w-[450px]" />
-            <p className=" font-bold text-[#530FFE] bg-[#ffffff] px-3 py-2 -mt-[23px] md:text-2xl text-xl">
+            <hr className="md:w-[500px] w-full px-2 md:px-5" />
+            <p className=" font-bold text-[#530FFE] bg-[#ffffff] px-3 py-2 -mt-[23px] md:text-2xl sm:text-xl text-lg">
               Recognized By Everyone
             </p>
             <div className="">
-              <p className="font-bold md:text-5xl text-4xl text-[#34383A]">
-                OUR LATEST PROJECTS
+              <p className="font-bold md:text-5xl sm:text-4xl text-3xl text-[#34383A]">
+                Our Last Projects
               </p>
             </div>
           </div>
@@ -30,13 +30,13 @@ const Projects = () => {
               className={`md:row-start-1 row-span-2 col-start-1 col-span-2 overflow-hidden cursor-pointer select-none`}
             >
               <div
-                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/SMmarketing.jpg')] hover:scale-125 w-full h-full transition-all duration-500`}
+                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/SMmarketing.jpg')] hover:scale-110 w-full h-full transition-all duration-500`}
               >
                 <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                   <p
                     className={` hidden font-medium text-3xl text-[#F8F8F8] ${oswald.className}`}
                   >
-                    Social Media Marketing
+                    Power Flash Myanmar
                   </p>
                 </div>
               </div>
@@ -47,7 +47,7 @@ const Projects = () => {
                 className={` col-start-1 col-span-1 overflow-hidden cursor-pointer select-none`}
               >
                 <div
-                  className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/GoogleAdvertising.png')] hover:scale-125 w-full h-full transition-all duration-500`}
+                  className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/GoogleAdvertising.png')] hover:scale-110 w-full h-full transition-all duration-500`}
                 >
                   <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex flex-col justify-center items-center align-middle [&>*]:hover:block gap-2">
                     <p
@@ -63,7 +63,7 @@ const Projects = () => {
                 className={` col-start-2 col-span-1 overflow-hidden cursor-pointer select-none`}
               >
                 <div
-                  className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/DigitalMarketingStragey.jpg')] hover:scale-125 w-full h-full transition-all duration-500`}
+                  className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/DigitalMarketingStragey.jpg')] hover:scale-110 w-full h-full transition-all duration-500`}
                 >
                   <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                     <p
@@ -80,7 +80,7 @@ const Projects = () => {
               className={`md:row-start-2 row-span-1 col-start-3 col-span-2 overflow-hidden cursor-pointer select-none`}
             >
               <div
-                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/CampaignIdea.png')] hover:scale-125 w-full h-full transition-all duration-500`}
+                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/CampaignIdea.png')] hover:scale-110 w-full h-full transition-all duration-500`}
               >
                 <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                   <p
@@ -92,9 +92,9 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="md:row-start-3 row-span-1 col-start-1 col-span-1 overflow-hidden cursor-pointer select-none">
+            {/* <div className="md:row-start-3 row-span-1 col-start-1 col-span-1 overflow-hidden cursor-pointer select-none">
               <div
-                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/WebService.png')] hover:scale-125 w-full h-full transition-all duration-500`}
+                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/WebService.png')] hover:scale-110 w-full h-full transition-all duration-500`}
               >
                 <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                   <p
@@ -108,7 +108,7 @@ const Projects = () => {
 
             <div className="md:row-start-3 row-span-1 col-start-2 col-span-2 overflow-hidden cursor-pointer select-none">
               <div
-                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/PhotoAndVedio.png')] hover:scale-125 w-full h-full transition-all duration-500`}
+                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/PhotoAndVedio.png')] hover:scale-110 w-full h-full transition-all duration-500`}
               >
                 <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                   <p
@@ -122,7 +122,7 @@ const Projects = () => {
 
             <div className="md:row-start-3 row-span-1 col-start-4 col-span-1 overflow-hidden cursor-pointer select-none">
               <div
-                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/2D3DMotionGraphic.png')] hover:scale-125 w-full h-full transition-all duration-500`}
+                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/2D3DMotionGraphic.png')] hover:scale-110 w-full h-full transition-all duration-500`}
               >
                 <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                   <p
@@ -132,7 +132,7 @@ const Projects = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
