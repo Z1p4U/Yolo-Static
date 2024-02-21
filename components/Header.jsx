@@ -16,6 +16,10 @@ const Header = () => {
       path: "about",
     },
     {
+      title: "Projects",
+      path: "projects",
+    },
+    {
       title: "Services",
       path: "services",
     },
@@ -27,19 +31,22 @@ const Header = () => {
 
   const [scroll, setScroll] = useState(true);
   const [scrollTop, setScrollTop] = useState(0);
+  const [isOpen, setOpen] = useState(false);
   const [toggle, setToggle] = useState(false);
 
   const scrollHandler = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 150) {
       setScroll(false);
     } else {
       setScroll(true);
     }
   };
 
-  window.onscroll = function () {
-    scrollPoint();
-  };
+  useEffect(() => {
+    window.onscroll = function () {
+      scrollPoint();
+    };
+  }, []);
 
   function scrollToTop() {
     let scrollTop = document.documentElement.scrollTop;
@@ -73,18 +80,19 @@ const Header = () => {
     return () => clearInterval(interval);
   }, [burger, clipPath]);
 
-  window.addEventListener("scroll", scrollHandler);
-  const [isOpen, setOpen] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", scrollHandler);
+  }, []);
 
   return (
     <div
       className={` ${
         scroll
-          ? "header top-0 left-0 z-50 h-auto w-full absolute"
-          : "header top-0 left-0 z-50 h-auto animate-slidedown w-full fixed border-b border-white border-opacity-20 bg-grey bg-opacity-80 backdrop-blur backdrop-filter"
+          ? "header top-0 left-0 z-50 w-full absolute"
+          : "header top-0 left-0 z-50 animate-slidedown w-full fixed border-b border-white border-opacity-20 bg-opacity-80 backdrop-blur backdrop-filter"
       } w-full`}
     >
-      <div className=" container h-[60px] md:h-[92px] mx-auto px-[15px] w-full flex justify-between items-center opacity-70">
+      <div className=" container h-[60px] md:h-[80px] mx-auto px-[15px] w-full flex justify-between items-center opacity-70">
         <Link href="/" className="text-2xl md:text-5xl font-semibold">
           <div className=" flex flex-nowrap justify-center items-baseline align-middle">
             <Image
@@ -92,7 +100,7 @@ const Header = () => {
               height={60}
               src={"/yolologo.svg"}
               alt="Yolo Logo"
-              className="img"
+              className=" z-[200]"
             />
             <p className=" font-bold text-[#530FFE] hidden lg:block">
               <span className=" md:text-xl lg:text-2xl xl:text-3xl">
@@ -105,21 +113,21 @@ const Header = () => {
         <div className=" hidden md:flex flex-row justify-end text-center">
           <ul className="mb-0 inline-flex no-underline list-none gap-7 pl-0">
             {navLinks.map((link, index) => (
-              <li className="inline-block align-middle" key={index}>
-                <Link
-                  activeClass="active-nav"
-                  to={link?.path}
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}
-                  onClick={() => scrollToTop}
-                  className="group no-underline relative inline-block cursor-pointer py-6 text-sm font-medium uppercase tracking-wider text-heading before:text-primary"
-                >
+              <Link
+                activeClass="active-nav"
+                to={link?.path}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                onClick={() => scrollToTop}
+                className="group no-underline relative inline-block cursor-pointer py-6 text-sm font-medium uppercase tracking-wider text-heading before:text-primary"
+              >
+                <li className="inline-block align-middle" key={index}>
                   {link?.title}
                   <span className="absolute left-0 top-auto bottom-5 inline-block h-px w-full origin-top-right scale-0 bg-primary align-middle transition-transform duration-500 group-hover:origin-top-left group-hover:scale-100"></span>
-                </Link>
-              </li>
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
@@ -139,28 +147,27 @@ const Header = () => {
           >
             <ul className={burger ? "nav-items active" : "nav-items"}>
               {navLinks.map((link, index) => (
-                <li className="" key={index}>
-                  <Link
-                    to={link?.path}
-                    activeClass="active-nav"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                    className=" hover:no-underline hover:text-[#5c5c5c]"
-                  >
-                    <li className={burger ? "anniSlideDown" : "anniSlideUp"}>
-                      {link?.title}
-                    </li>
-                  </Link>
-                </li>
+                <Link
+                  to={link?.path}
+                  key={index}
+                  activeClass="active-nav"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  className=" hover:no-underline hover:text-[#5c5c5c]"
+                >
+                  <li className={burger ? "anniSlideDown" : "anniSlideUp"}>
+                    {link?.title}
+                  </li>
+                </Link>
               ))}
             </ul>
           </div>
         </div>
       </div>
 
-      <div className="progress-bar-container absolute left-0 top-[60px] md:top[92px] w-full">
+      <div className="progress-bar-container absolute left-0 top-[60px] md:top-[80px] w-full">
         <div className="w-full h-1">
           <div
             className="bg-gradient-to-r from-[#530FFE60] from-20% via-[#530FFE] via-40% to-sky-600 to-90% h-1"

@@ -25,12 +25,14 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className={`grid grid-rows-3 md:grid-cols-4 h-[1000px] mt-10`}>
+          <div
+            className={`grid grid-rows-4 md:grid-rows-3 lg:grid-rows-2 grid-cols-2 lg:grid-cols-4 h-[1000px] md:h-[800px] lg:h-[600px] mt-10`}
+          >
             <div
-              className={`md:row-start-1 row-span-2 col-start-1 col-span-2 overflow-hidden cursor-pointer select-none`}
+              className={`row-start-1 row-span-1 lg:row-span-2 col-start-1 col-span-2 overflow-hidden cursor-pointer `}
             >
               <div
-                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/SMmarketing.jpg')] hover:scale-110 w-full h-full transition-all duration-500`}
+                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/projects/powerflash.jpg')] hover:scale-110 w-full h-full transition-all duration-500`}
               >
                 <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                   <p
@@ -42,34 +44,34 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="md:row-start-1 row-span-1 col-start-3 col-span-2 grid grid-cols-2">
+            <div className="row-start-2 lg:row-start-1 row-span-2 md:row-span-1 col-start-1 col-span-2 lg:col-start-3 grid grid-cols-2 grid-rows-2 md:grid-rows-1">
               <div
-                className={` col-start-1 col-span-1 overflow-hidden cursor-pointer select-none`}
+                className={` col-start-1 col-span-2 md:col-span-1 row-start-1 row-span-1 overflow-hidden cursor-pointer select-none`}
               >
                 <div
-                  className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/GoogleAdvertising.png')] hover:scale-110 w-full h-full transition-all duration-500`}
+                  className={`bg-no-repeat bg-cover bg-center bg-[url('../public/projects/aki.jpg')] hover:scale-110 w-full h-full transition-all duration-500`}
                 >
                   <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex flex-col justify-center items-center align-middle [&>*]:hover:block gap-2">
                     <p
                       className={` hidden font-medium text-2xl text-[#F8F8F8] ${oswald.className}`}
                     >
-                      Programmatic Advertising
+                      AKI College
                     </p>
                   </div>
                 </div>
               </div>
 
               <div
-                className={` col-start-2 col-span-1 overflow-hidden cursor-pointer select-none`}
+                className={`col-start-1 md:col-start-2 col-span-2 md:col-span-1 row-start-2 row-span-1 md:row-start-1 md:row-span-1 overflow-hidden cursor-pointer select-none`}
               >
                 <div
-                  className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/DigitalMarketingStragey.jpg')] hover:scale-110 w-full h-full transition-all duration-500`}
+                  className={`bg-no-repeat bg-cover bg-center bg-[url('../public/projects/bb.jpg')] hover:scale-110 w-full h-full transition-all duration-500`}
                 >
                   <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                     <p
                       className={` hidden font-medium text-2xl text-[#F8F8F8] ${oswald.className}`}
                     >
-                      Digital Marketing Strategy
+                      Random
                     </p>
                   </div>
                 </div>
@@ -77,16 +79,16 @@ const Projects = () => {
             </div>
 
             <div
-              className={`md:row-start-2 row-span-1 col-start-3 col-span-2 overflow-hidden cursor-pointer select-none`}
+              className={` row-start-4 md:row-start-3 lg:row-start-2 row-span-1 col-start-1 lg:col-start-3 col-span-2 overflow-hidden cursor-pointer select-none`}
             >
               <div
-                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/Service/CampaignIdea.png')] hover:scale-110 w-full h-full transition-all duration-500`}
+                className={`bg-no-repeat bg-cover bg-center bg-[url('../public/projects/cc.jpg')] hover:scale-110 w-full h-full transition-all duration-500`}
               >
                 <div className=" bg-transparent hover:bg-[#000000aa] transition-all duration-500 h-full w-full flex justify-center items-center align-middle [&>*]:hover:block gap-2">
                   <p
                     className={` hidden font-medium text-2xl text-[#F8F8F8] ${oswald.className}`}
                   >
-                    Campaign Idea
+                    Random
                   </p>
                 </div>
               </div>

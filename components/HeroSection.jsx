@@ -42,7 +42,7 @@ const icons = [
 const HeroSection = () => {
   return (
     <>
-      <div id="home" className="container mx-auto md:mt-10 mt-20 px-2 md:px-5">
+      <div id="home" className="container mx-auto md:mt-16 mt-20 px-2 md:px-5 ">
         <div className="grid grid-cols-2 justify-center items-center align-middle ">
           <div className=" col-start-1 col-span-2 md:col-span-1 flex flex-col justify-center items-center md:justify-end md:items-baseline">
             <div className=" mb-5 mx-5">
@@ -58,7 +58,7 @@ const HeroSection = () => {
                 creative company worthy of your trust.
               </p>
             </div>
-            <div className=" flex gap-5 flex-row text-4xl">
+            <div className=" flex gap-5 flex-row self-start ms-5 text-4xl">
               <Link
                 href={"https://www.facebook.com/yolodigitalmarketingagency/"}
               >
@@ -84,7 +84,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <Marquee className="w-full" direction="right">
+        <Marquee className="w-full mt-5 md:mt-0" direction="right">
           {icons?.map((icon) => {
             return (
               <div className=" flex justify-center items-center align-middle">
