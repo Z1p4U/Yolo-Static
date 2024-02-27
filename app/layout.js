@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <Header />
         <HeroSection />
         <AboutUs />
-        <Projects />
+        {/* <Projects /> */}
         <Services />
         <Dialogue />
         <Contact />

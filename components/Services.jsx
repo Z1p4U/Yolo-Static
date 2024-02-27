@@ -26,7 +26,7 @@ const Services = () => {
               High Expectations
             </p>
             <div className="">
-              <p className="font-bold md:text-5xl sm:text-4xl text-3xl text-[#34383A]">
+              <p className="font-bold md:text-5xl sm:text-3xl text-2xl text-[#34383A]">
                 Services We Provided
               </p>
             </div>

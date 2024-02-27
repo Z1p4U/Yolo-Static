@@ -15,27 +15,63 @@ const oswald = Oswald({
 const icons = [
   {
     id: 1,
-    src: "/logo/p-gs.png",
+    src: "/logo/aki.png",
   },
   {
     id: 2,
-    src: "/logo/p-me.png",
+    src: "/logo/cinderella.png",
   },
   {
     id: 3,
-    src: "/logo/p-sandar.jpg",
+    src: "/logo/eros.png",
   },
   {
     id: 4,
-    src: "/logo/p-thaya.png",
+    src: "/logo/mfi.png",
   },
   {
     id: 5,
-    src: "/logo/p-tnt.png",
+    src: "/logo/mk.png",
   },
   {
     id: 6,
-    src: "/logo/ps.png",
+    src: "/logo/msp.png",
+  },
+  {
+    id: 7,
+    src: "/logo/myanandar.png",
+  },
+  {
+    id: 8,
+    src: "/logo/navi.png",
+  },
+  {
+    id: 9,
+    src: "/logo/pkm.png",
+  },
+  {
+    id: 10,
+    src: "/logo/pwal.png",
+  },
+  {
+    id: 11,
+    src: "/logo/sandar.jpg",
+  },
+  {
+    id: 12,
+    src: "/logo/syl.png",
+  },
+  {
+    id: 13,
+    src: "/logo/tayoke.jpg",
+  },
+  {
+    id: 14,
+    src: "/logo/tnt.png",
+  },
+  {
+    id: 15,
+    src: "/logo/y.png",
   },
 ];
 
@@ -80,7 +116,7 @@ const HeroSection = () => {
             <img
               src={"/hero_section.svg"}
               alt="Hero Section Image"
-              className=" w-[500px] h-[400px] "
+              className=" w-[700px] h-[600px] "
             />
           </div>
         </div>
@@ -90,7 +126,7 @@ const HeroSection = () => {
               <div className=" flex justify-center items-center align-middle">
                 <img
                   src={icon.src}
-                  className=" h-20 mx-16 cursor-pointer rounded-md"
+                  className=" h-20 w-32 mx-10 cursor-pointer rounded-md"
                 />
               </div>
             );

@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Oswald } from "next/font/google";
 import { Roboto } from "next/font/google";
-import heroSectionImage from "/public/missie.jpg";
+import heroSectionImage from "/public/yolologo.svg";
 
 const oswald = Oswald({
   weight: "400",
@@ -31,7 +31,7 @@ const AboutUs = () => {
               Our Projects & Vision
             </p>
             <div className="">
-              <p className="font-bold md:text-5xl sm:text-4xl text-3xl text-[#34383A]">
+              <p className="font-bold md:text-5xl sm:text-3xl text-2xl text-[#34383A]">
                 About Our Company
               </p>
             </div>
@@ -39,12 +39,10 @@ const AboutUs = () => {
 
           <div className=" mt-10 grid grid-cols-2 gap-10 ">
             <div className=" col-start-1 col-span-2 lg:col-span-1 ">
-              <Image
-                width={800}
-                height={400}
-                src={heroSectionImage}
+              <img
+                src="/yolologo.svg"
                 alt="Hero Section Image"
-                className=" rounded-sm"
+                className=" rounded-sm "
               />
             </div>
             <div
