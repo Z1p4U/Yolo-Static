@@ -35,11 +35,11 @@ const Dialogue = () => {
               into the forefront of innovation"
             </p>
             <p className={`${oswald.className}`}>
-              <img
-                src={"/missie.jpg"}
+              {/* <img
+                src={"/yolologo.svg"}
                 alt="Profile"
                 className=" w-[25px] h-[25px] md:w-[35px] md:h-[35px]  rounded-full object-cover inline-block mr-2"
-              />
+              /> */}
               <span className=" font-semibold text-sm sm:text-base md:text-lg ">
                 Ye Kyaw Lin
               </span>{" "}
